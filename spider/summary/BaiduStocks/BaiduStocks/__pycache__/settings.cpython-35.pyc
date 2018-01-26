@@ -1,0 +1,3 @@
+
+
+?蚗k  ?              @   s+   d  Z  d g Z d Z d Z d d i Z d S)ZBaiduStockszBaiduStocks.spidersTz-BaiduStocks.pipelines.BaidustocksInfoPipelinei,  N)?BOT_NAME?SPIDER_MODULES?NEWSPIDER_MODULE?ROBOTSTXT_OBEY?ITEM_PIPELINES?r   r   ?D:\pycodes\BaiduStocks\BaiduStocks\settings.py?<module>   s   	.
