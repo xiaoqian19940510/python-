@@ -1,0 +1,28 @@
+1、建立工程和Spider模板
+2、编写Spider
+3、编写ITEM Pipelines
+
+一、
+	(1) scrapy startproject BaiduStocks
+	(2) cd BaiduStocks
+	(3)scrapy genspider stocks baidu.com
+	(4)进一步修改spiders/stocks.py文件
+	
+二、编写Spider  即spider.py文件
+	（1）配置stocks.py文件
+	（2）修改对返回页面的处理
+	（3）修改对新增URL爬取请求的处理
+	
+三、编写Pipelines  即Pipelines.py文件
+	（1）配置Pipelines.py文件
+	（2）定义对爬取项（Scraped Item）的处理类
+	（3）修改了Pipelines.py的类  则对应修改settings.py文件中的ITEM_PIPELINES选项 
+
+执行命令：scrapy crawl stocks  程序运行	
+
+优化  提高爬取速度
+settings.py文件参数的修改来提高爬取速度
+CONCURRENT_REQUESTS   Downloader最大并发请求下载数量，默认32
+CONCURRENT_ITEMS    Item Pipeline最大并发ITEM处理数量，默认100
+CONCURRENT_REQUESTS_PER_DOMAIN 每个目标域最大的并发请求数量，默认8
+CONCURRENT_REQUESTS_PER_IP 每个目标IP最大的并发请求数量，默认0，非0有效
