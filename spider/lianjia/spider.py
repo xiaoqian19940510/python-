@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-@author: 冰蓝
-@site: http://lanbing510.info
+@author: xiaoqian
+@date:2018-1-29
 """
 
 import re
