@@ -1,0 +1,8 @@
+题目：Adversarial Learning for Neural Dialogue Generation
+中文题目： 基于对抗学习的神经对话生成系统
+论文信息：Li J, Monroe W, Shi T, et al. Adversarial Learning for Neural Dialogue Generation[J]. 2017.
+研究问题： 为了使对话系统更接近人类的对话，提出基于对抗学习的神经网络对话生成系统，利用图灵测试来判断系统性能。
+使用方法： 本文提出的基于对抗学习的神经对话生成系统是基于强化学习的网络，分为两个系统，一个用于生成回复序列的通用模型，一个模拟人类评估的图灵测试鉴频器。
+最终效果： 实验结果表明该系统生成的对话模型比之前的基线更接近人类对话。
+
+
