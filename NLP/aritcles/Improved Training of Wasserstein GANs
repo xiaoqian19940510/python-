@@ -84,3 +84,4 @@ LSGAN: RMSProp (α = .0001) [chosen by search over α = .001, .0002, .0001]
 该文提供了一种训练GAN的稳定的算法，能够更好的探索哪种架构能够得到最好的生成模型性能。该方法也打开了使用大规模图像或语言数据集训练以得到更强的模型性能的大门。
 
 Github：https://github.com/caogang/wgan-gp
+https://github.com/igul222/improved_wgan_training
