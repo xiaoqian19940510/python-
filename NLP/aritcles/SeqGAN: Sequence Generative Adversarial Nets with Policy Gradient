@@ -1,0 +1,1 @@
+利用了强化学习的东西来解决以上问题。如图，针对第一个问题，首先是将D的输出作为Reward，然后用PolicyGradientMethod来训练G。针对第二个问题，通过蒙特卡罗搜索，针对部分生成的序列，用一个Roll-OutPolicy（也是一个LSTM）来Sampling完整的序列，再交给D打分，最后对得到的Reward求平均值。
