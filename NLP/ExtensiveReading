@@ -1,0 +1,15 @@
+1、Deep Learning for Acoustic Addressee Detection in Spoken Dialogue Systems（口语对话系统中基于深度学习的声学目标检测）
+Conference Paper in Communications in Computer and Information Science · September 2018 with 4 Reads
+主要内容：对于口语对话系统已有研究，有基于全连接神经网络的，基于LSTM网络的，目前的研究都是针对在这两个系统的基础上改进，使用不同的优化算法，激活函数和学习速率提高方法。本文研究提高模型训练速率，使用递归特征消除方法。
+2、Sample Efficient Deep Reinforcement Learning for Dialogue Systems with Large Action Spaces（使用深度强化学习大规模对话系统样本效率）
+(Submitted on 11 Feb 2018)
+人工智能自动对话代理能和人类交流。利用深度强化学习的方法解决，输入内容，系统给一个回复，行为评价准则和对话重演的离线强化学习，各种减小偏置和方差的方法，提出的方法不仅可以提高训练速度，而且可以应用在更复杂的系统上。即将ACER算法应用在对话系统策略优化，这个方法比现今最先进的深度学习口语对话系统更优。
+
+3、BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems（基于深度强化学习的任务导向对话系统效率探索）
+Lipton Z C, Li X, Gao J, et al. BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems[J]. 2017.
+我们提出了一种新的算法，可显着提高对话系统中深度强化学习代理的探索效率。我们的代理通过汤普森采样进行探索，从后向贝叶斯神经网络绘制蒙特卡罗样本。我们的算法比普通的探索策略学习速度快得多，例如？-greedy，boltzmann，bootstrapping和基于内在奖励的策略。此外，我们还表明，通过少量成功片段的经验刺激重播缓冲区可以使强化学习可行，否则可能会失败。
+
+4、A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues（用于生成对话的分层潜在可变编码器 - 解码器模型）
+顺序数据通常具有层次结构，在子序列之间具有复杂的依赖关系，例如在对话中的发音之间发现。为了对这种生成过程进行建模，我们提出了一个基于神经网络的生成架构，其中潜在的随机变量跨越了不同数量的时间步长。我们将所提出的模型应用于对话响应生成的任务，并将其与近期的神经网络架构进行比较。我们通过自动评估指标评估模型性能，并进行人为评估。实验表明，我们的模型改进了最近提出的模型，并且潜在变量有助于产生长期输出并保持上下文。
+
+
