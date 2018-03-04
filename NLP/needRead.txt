@@ -1,0 +1,21 @@
+1、A Network-based End-to-End Trainable Task-oriented Dialogue System
+
+2、How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation
+
+3、End-to-End Reinforcement Learning of Dialogue Agents for Information Access
+2016年卡耐基梅隆大学研究团队利用深度强化学习进行对话状态追踪和管理
+
+4、Zhao T, Eskenazi M. Towards End-to-End Learning for Dialog State Tracking and Management using Deep Reinforcement Learning [J]. arXiv preprint arXiv:1606.02560, 2016.
+2016年麻省理工大学研究团队提出层次化DQN模型，其代码采用Keras实现并开源[ code ]，该工作发表在NIPS2016上。
+
+5、Kulkarni T D, Narasimhan K R, Saeedi A, et al. Hierarchical deep reinforcement learning: Integrating temporal abstraction and intrinsic motivation [J]. arXiv preprint arXiv:1604.06057, 2016.
+
+6、BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems
+
+7、Deep Reinforcement Learning with Double Q-Learning
+
+8、Deep Attention Recurrent Q-Network
+
+9、SimpleDS: A Simple Deep Reinforcement Learning Dialogue System
+
+10、Deep Reinforcement Learning with a Natural Language Action Space
