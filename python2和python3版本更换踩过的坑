@@ -2,6 +2,7 @@
 1、print python2中可以加括号也可以不加，但在python3中必须加括号print()
 2、cPickle python2中为cPickle，在python3中改为pickle
 3、file() python2中可以使用file()读写文件，而在python中需要使用open()
-4、reload(sys);sys.setdefaultencoding('utf-8')在python2中需要，python3中去掉
+4、reload(sys);sys.setdefaultencoding('utf-8')在python2中需要，python3中去掉  加入if sys.getdefaultencoding() != defaultencoding:；reload(sys)
+；sys.setdefaultencoding(defaultencoding)
 5、input() python3中返回会str，python2中返回为int，python2要返回str需要使用raw_input()
 6、python2中是try:;Exception,e:  而python3中是try:;Exception as e:
