@@ -1,0 +1,4 @@
+ 如果在cmd中直接输入pip install xgboost报错的画，可以考虑使用的我的安装方法，网上各种安装xgboost的方法都比较麻烦
+ 1、在下面链接中找到所需版本的xgboost：下载 https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
+ 2、在cmd命令行直接输入：pip install xgboost‑0.6‑cp35‑cp35m‑win_amd64.whl
+ 3、即可安装成功  测试可输入： import xgboost 
