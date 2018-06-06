@@ -1,0 +1,3 @@
+给出anaconda各个版本安装地址：https://repo.continuum.io/archive/    选择合适的版本下载
+linux下  下载后  bash anaconda****.sh   安装  根据提示按回车或者yes
+完成后 进入python 看是否配置了anaconda环境，若不成功  则source ~/.bashrc激活安装
