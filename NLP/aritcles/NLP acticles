@@ -1,0 +1,151 @@
+1、Experimental comparison of text information based punctuation recovery algorithms in real data
+实验数据中基于文本信息的标点符号恢复算法的实验比较
+Punctuation recovery is very important for automatic speech recognition (ASR). It greatly improves readability of transcripts and user experience, and facilitates following natural language processing tasks. The text information based method is one of the basic solutions of punctuation recovery. For analyzing the features of these algorithms, improving them and using them to develop practical system, this paper evaluates text information based punctuation recovery algorithms (HELM, CRF, RNNLM and GTI) in real data. Results show that GTI outperforms other algorithms for punctuation recovery, and ASR's error is the main cause of performance degradation of all punctuation recovery algorithms. Finally, some suggestions are given.
+标点符号恢复对于自动语音识别（asr）非常重要。它极大地提高了成绩单的可读性和用户体验，并促进了以下自然语言处理任务。基于文本信息的方法是标点符号恢复的基本方法之一。为了分析这些算法的特点，对它们进行改进，并利用它们开发实用系统，本文对实时数据中基于标点符号的恢复算法（helm，crf，rnnlm和gti）进行评估。结果表明，gti优于其他标点符号恢复算法，asr错误是所有标点符号恢复算法性能下降的主要原因。最后给出了一些建议。
+
+2、Power-normalized PLP (PNPLP) feature for robust speech recognition
+功率归一化的plp（pnplp）特征用于鲁棒的语音识别
+
+
+ABSTRACT In this paper, we first review several approaches of feature extraction algorithms in robust speech recognition, e.g. Mel frequency cepstral coefficients (MFCC) [1], perceptual linear prediction (PLP) [2] and power-normalized cepstral coefficients (PNCC) [3]. A new feature extraction algorithm for noise robust speech recognition is proposed, in which medium-time processing works as noise suppression module. The details will be described to show that the algorithm is superior. The experimental results prove that our proposed method significantly outperforms state-of-the-art algorithms.
+摘要在本文中，我们首先回顾几种特征提取算法在鲁棒语音识别中的方法，例如，mel频率倒谱系数（mfcc）[1]，感知线性预测（plp）[2]和功率归一倒谱系数（pncc）[3]。提出一种新的噪声鲁棒语音识别特征提取算法，其中中等时间处理为噪声抑制模块。将描述细节以显示该算法是优越的。实验结果证明了我们提出的方法明显优于最先进的算法。
+
+3、Deep Reinforcement Learning for Dialogue Generation
+深入强化学习对话的一代
+
+摘要：最近的对话生成神经模型提供了很大的希望，可以为会话代理生成响应，但往往是短视的，一次一个地预测话语，而忽略它们对未来结果的影响。建模对话的未来方向对于产生连贯而有趣的对话至关重要，这种对话导致传统的nlp对话模式吸取了强化的学习。在本文中，我们展示了如何整合这些目标，应用深入的强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性（非重复性转向），一致性和易于回答（与前瞻性函数有关）。我们评估我们的模型的多样性，长度以及与人类评委，表明提出的算法产生更多的互动反应，并设法促进对话模拟更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。Modeling the future direction of a dialogue is crucial to generating coherent, interesting dialogues, a need which led traditional NLP models of dialogue to draw on reinforcement learning. In this paper, we show how to integrate these goals, applying deep reinforcement learning to model future reward in chatbot dialogue. The model simulates dialogues between two virtual agents, using policy gradient methods to reward sequences that display three useful conversational properties: informativity (non-repetitive turns), coherence, and ease of answering (related to forward-looking function). We evaluate our model on diversity, length as well as with human judges, showing that the proposed algorithm generates more interactive responses and manages to foster a more sustained conversation in dialogue simulation. This work marks a first step towards learning a neural conversational model based on the long-term success of dialogues.
+
+4、DIALOGUE-ACT TAGGING USING SMART FEATURE SELECTION; RESULTS ON MULTIPLE CORPORA
+使用智能特征选择进行对话标记;结果在多个语料库
+本文概述了我们正在进行的对话分类工作。结果显示在icsi，总机和ami语料库中，为即将到来的研究设定了基准。对于这些语料库，所获得的最佳准确性分数分别为89.27％，65.68％和59.76％。我们引入智能压缩技术进行特征选择，并将ami转录子集的性能与ami-asr输出的性能进行比较。
+This paper presents an overview of our on-going work on dialogueact classification. Results are presented on the ICSI, Switchboard, and on a selection of the AMI corpus, setting a baseline for forthcoming research. For these corpora the best accuracy scores obtained are 89.27%, 65.68% and 59.76%, respectively. We introduce a smart compression technique for feature selection and compare the performance from a subset of the AMI transcriptions with AMI-ASR output for the same subset.
+
+
+5、Adversarial Learning for Neural Dialogue Generation
+敌对学习神经对话的一代
+摘要：本文从图灵测试的直观性出发，提出了开放式对话生成的对抗训练方法：训练系统产生与人类生成的对话语言无法区分的序列。我们把这个任务作为一个强化学习（rl）问题，在这个问题中，我们共同训练两个系统，一个产生响应序列的生成模型和一个与图灵测试中的人类评估者类似的鉴别器 - 区分人生成的对话和机器生成的对话。然后将鉴别器的输出用作生成模型的奖励，推动系统产生大部分类似于人类对话的对话。除了对抗训练之外，我们还描述了一个对抗性评估模型，它利用成功欺骗敌手作为对话评估指标，同时避免了一些潜在的隐患。包括对抗性评估在内的若干指标的实验结果表明，敌对方培训的系统比之前的基线产生更高质量的响应
+Abstract: In this paper, drawing intuition from the Turing test, we propose using adversarial training for open-domain dialogue generation: the system is trained to produce sequences that are indistinguishable from human-generated dialogue utterances. We cast the task as a reinforcement learning (RL) problem where we jointly train two systems, a generative model to produce response sequences, and a discriminator---analagous to the human evaluator in the Turing test--- to distinguish between the human-generated dialogues and the machine-generated ones. The outputs from the discriminator are then used as rewards for the generative model, pushing the system to generate dialogues that mostly resemble human dialogues. In addition to adversarial training we describe a model for adversarial {\em evaluation} that uses success in fooling an adversary as a dialogue evaluation metric, while avoiding a number of potential pitfalls. Experimental results on several metrics, including adversarial evaluation, demonstrate that the adversarially-trained system generates higher-quality responses than previous baselines
+
+
+6、Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models
+使用生成式分级神经网络模型建立端对端的对话系统
+
+摘要：我们利用生成模型研究了基于大对话语料库建立开放领域，对话式对话系统的任务。生成模型产生系统响应，这些系统响应是逐字自主生成的，为开发现实灵活的交互提供了可能性。为了支持这个目标，我们将最近提出的分层递归编码器 - 解码器神经网络扩展到对话域，并且证明这个模型与最先进的神经语言模型和补偿n元模型是竞争的。我们研究了这种方法和类似方法的局限性，并且展示了如何通过从更大的问题 - 答案对语料库和预训练词嵌入引导学习来提高其性能。
+Abstract: We investigate the task of building open domain, conversational dialogue systems based on large dialogue corpora using generative models. Generative models produce system responses that are autonomously generated word-by-word, opening up the possibility for realistic, flexible interactions. In support of this goal, we extend the recently proposed hierarchical recurrent encoder-decoder neural network to the dialogue domain, and demonstrate that this model is competitive with state-of-the-art neural language models and back-off n-gram models. We investigate the limitations of this and similar approaches, and show how its performance can be improved by bootstrapping the learning from a larger question-answer pair corpus and from pretrained word embeddings.
+
+7、The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems
+ubuntu对话语料库：一个用于研究非结构化多回合对话系统的大型数据集
+
+摘要：本文介绍了ubuntu对话语料库，这是一个包含近100万次多回合对话的数据集，总共有700多万条语音和1亿个词汇。这为基于神经语言模型建立对话管理者提供了一个独特的资源，可以利用大量的未标记数据。该数据集既具有对话状态追踪挑战数据集中对话的多回转特性，又具有来自微博服务（如Twitter）的交互的非结构化特性。我们还描述了两个适合于分析这个数据集的神经学习架构，并提供了选择最佳下一个响应的基准性能。
+Abstract: This paper introduces the Ubuntu Dialogue Corpus, a dataset containing almost 1 million multi-turn dialogues, with a total of over 7 million utterances and 100 million words. This provides a unique resource for research into building dialogue managers based on neural language models that can make use of large amounts of unlabeled data. The dataset has both the multi-turn property of conversations in the Dialog State Tracking Challenge datasets, and the unstructured nature of interactions from microblog services such as Twitter. We also describe two neural learning architectures suitable for analyzing this dataset, and provide benchmark performance on the task of selecting the best next response.
+
+
+8、A Network-based End-to-End Trainable Task-oriented Dialogue System
+一个基于网络的端到端可训练任务导向对话系统
+
+摘要：通过与人类自然对话来完成任务的教学机器具有挑战性。目前，开发面向任务的对话系统需要创建多个组件，通常这涉及大量的手工，或者获取昂贵的标记数据集以解决每个组件的统计学习问题。在这项工作中，我们引入了基于神经网络的文本输入，文本输出端到端可训练目标导向对话系统，以及基于新颖管道内衬盎司向导框架收集对话数据的新方法。这种方法使我们能够轻松地开发对话系统，而不需要对当前的任务做出太多的假设。结果表明，该模型能够自然地与人类对话，同时帮助他们完成餐馆搜索领域的任务。
+Abstract: Teaching machines to accomplish tasks by conversing naturally with humans is challenging. Currently, developing task-oriented dialogue systems requires creating multiple components and typically this involves either a large amount of handcrafting, or acquiring costly labelled datasets to solve a statistical learning problem for each component. In this work we introduce a neural network-based text-in, text-out end-to-end trainable goal-oriented dialogue system along with a new way of collecting dialogue data based on a novel pipe-lined Wizard-of-Oz framework. This approach allows us to develop dialogue systems easily and without making too many assumptions about the task at hand. The results show that the model can converse with human subjects naturally whilst helping them to accomplish tasks in a restaurant search domain.
+
+9、How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation
+如何不评估你的对话系统：一个关于对话产生的无监督评估指标的实证研究
+
+摘要：我们调查对话响应生成系统的评估指标，监督标签，如任务完成，不可用。最近在响应世代中的作品已经采用机器翻译的指标来比较模型生成的响应和单个目标响应。我们显示这些指标与非技术Twitter领域中的人为判断相关性很弱，而在技术上的ubuntu领域则完全没有。我们提供了定量和定性结果，突出了现有指标的具体弱点，并为未来开发更好的对话系统自动评估指标提供了建议。
+Abstract: We investigate evaluation metrics for dialogue response generation systems where supervised labels, such as task completion, are not available. Recent works in response generation have adopted metrics from machine translation to compare a model's generated response to a single target response. We show that these metrics correlate very weakly with human judgements in the non-technical Twitter domain, and not at all in the technical Ubuntu domain. We provide quantitative and qualitative results highlighting specific weaknesses in existing metrics, and provide recommendations for future development of better automatic evaluation metrics for dialogue systems.
+
+
+10、Continuously Learning Neural Dialogue Management
+不断学习神经对话管理
+
+我们描述了面向任务的口语对话系统中的两步对话管理方法。提出了统一的神经网络框架，使系统能够通过一组对话数据进行监督学习，然后通过强化学习不断改进其行为，所有这些都是在单一模型上使用基于梯度的算法。实验证明了监督模型在基于语料库的评估中的有效性，用户模拟和付费的人类主题。强化学习的使用进一步提高了模型在交互设置中的性能，特别是在高噪声条件下。
+We describe a two-step approach for dialogue management in task-oriented spoken dialogue systems. A unified neural network framework is proposed to enable the system to first learn by supervision from a set of dialogue data and then continuously improve its behaviour via reinforcement learning, all using gradient-based algorithms on one single model. The experiments demonstrate the supervised model's effectiveness in the corpus-based evaluation, with user simulation, and with paid human subjects. The use of reinforcement learning further improves the model's performance in both interactive settings, especially under higher-noise conditions.
+
+
+11、Stochastic Language Generation in Dialogue using Recurrent Neural Networks with Convolutional Sentence Reranking
+随机语言生成在对话中使用递归神经网络与卷积句子重新排序
+
+摘要：口语对话系统（sds）的自然语言生成（nlg）组件通常需要大量的手工制作或标记良好的数据集来训练。这些限制大大增加了开发成本，使得跨领域，多语言的对话系统变得棘手。此外，人类语言是上下文感知的。最自然的反应应该直接从数据中学习，而不是依赖于预定义的语法或规则。本文提出了一种基于联合递归和卷积神经网络结构的统计语言生成器，该结构可以在没有任何语义对齐或预定义语法树的情况下在对话行为 - 话语对上进行训练。客观的指标表明，这种新模式在相同的实验条件下胜过以前的方法。人类法官的评估结果表明，与n-gram和基于规则的系统相比，它产生的不仅是高质量，而且是语言上不同的话语。
+Abstract: The natural language generation (NLG) component of a spoken dialogue system (SDS) usually needs a substantial amount of handcrafting or a well-labeled dataset to be trained on. These limitations add significantly to development costs and make cross-domain, multi-lingual dialogue systems intractable. Moreover, human languages are context-aware. The most natural response should be directly learned from data rather than depending on predefined syntaxes or rules. This paper presents a statistical language generator based on a joint recurrent and convolutional neural network structure which can be trained on dialogue act-utterance pairs without any semantic alignments or predefined grammar trees. Objective metrics suggest that this new model outperforms previous methods under the same experimental conditions. Results of an evaluation by human judges indicate that it produces not only high quality but linguistically varied utterances which are preferred compared to n-gram and rule-based systems.
+
+
+12、Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access
+逐步加强对话机构的信息获取
+
+摘要：本文提出了kb-infobot--一种多轮对话代理，它可以帮助用户搜索知识库（kbs），而不需要编写复杂的查询。这种面向目标的对话代理通常需要与外部数据库交互以访问真实世界的知识。以前的系统通过向kb发出一个符号查询来基于它们的属性检索条目来实现这一点。然而，这种符号操作打破了系统的可区分性，阻碍了神经对话代理的端到端训练。在这篇文章中，我们解决了这个限制，通过用一个诱导的“软”后验分布来替代符号查询，表明用户感兴趣的是哪个实体。将软检索过程与强化学习器相结合导致更高的任务成功率和奖励在模拟和真实的用户。我们还提供了一个完全由用户反馈训练的完全神经端对端代理，并讨论了它在个性化对话代理中的应用。源代码可在此https网址获得
+Abstract: This paper proposes KB-InfoBot -- a multi-turn dialogue agent which helps users search Knowledge Bases (KBs) without composing complicated queries. Such goal-oriented dialogue agents typically need to interact with an external database to access real-world knowledge. Previous systems achieved this by issuing a symbolic query to the KB to retrieve entries based on their attributes. However, such symbolic operations break the differentiability of the system and prevent end-to-end training of neural dialogue agents. In this paper, we address this limitation by replacing symbolic queries with an induced "soft" posterior distribution over the KB that indicates which entities the user is interested in. Integrating the soft retrieval process with a reinforcement learner leads to higher task success rate and reward in both simulations and against real users. We also present a fully neural end-to-end agent, trained entirely from user feedback, and discuss its application towards personalized dialogue agents. The source code is available at this https URL
+
+
+13、The WYRED Project: A Technological Platform for a Generative Research and Dialogue about Youth Perspectives and Interests in Digital Society
+这个受到青睐的项目：一个关于数字社会青年观点和兴趣的创造性研究和对话的技术平台
+
+
+14、Really? Well. Apparently Bootstrapping Improves the Performance of Sarcasm and Nastiness Classifiers for Online Dialogue
+真？好。显然bootstrapping提高了在线对话的讽刺和肮脏分类器的性能
+
+网络上越来越多的信息是对话式的，从Facebook的新闻传送到论坛对话，评论新闻文章的线索。与传统的单一自然语言处理资源（如新闻）相反，社交媒体中的高度社交对话频繁发生，使其成为nlp的一个具有挑战性的语境。本文测试了一个最初在单调领域提出的引导方法来训练分类器，以便在对话中识别出两种不同类型的主观语言：讽刺和唠叨。我们探索了两种开发语言指标的方法，用于一级分类器，旨在以召回为代价使精度最大化。第一阶段表现最好的分类器对讽刺话语达到54％的精确度和38％的召回率。然后，我们使用以前工作中的一般句法模式来创建更一般的讽刺指标，将精确度提高到62％，回想到52％。为了进一步检验该方法的一般性，我们将其应用于自动对话行为的分类器中。我们的第一个阶段，使用众包的讨厌的指标，达到58％的精度和49％的召回率，当我们用一般的句法模式引导到第一级时，精度提高到75％，回忆率提高到62％。
+More and more of the information on the web is dialogic, from Facebook newsfeeds, to forum conversations, to comment threads on news articles. In contrast to traditional, monologic Natural Language Processing resources such as news, highly social dialogue is frequent in social media, making it a challenging context for NLP. This paper tests a bootstrapping method, originally proposed in a monologic domain, to train classifiers to identify two different types of subjective language in dialogue: sarcasm and nastiness. We explore two methods of developing linguistic indicators to be used in a first level classifier aimed at maximizing precision at the expense of recall. The best performing classifier for the first phase achieves 54% precision and 38% recall for sarcastic utterances. We then use general syntactic patterns from previous work to create more general sarcasm indicators, improving precision to 62% and recall to 52%. To further test the generality of the method, we then apply it to bootstrapping a classifier for nastiness dialogic acts. Our first phase, using crowdsourced nasty indicators, achieves 58% precision and 49% recall, which increases to 75% precision and 62% recall when we bootstrap over the first level with generalized syntactic patterns.
+
+
+15、Policy Networks with Two-Stage Training for Dialogue Systems
+政策网络采用对话系统的两阶段培训
+
+在本文中，我们建议使用深度策略网络，训练有利于优化对话系统的优化评论者方法。首先，我们表明，在概括的状态和动作空间中，深层强化学习（rl）优于高斯过程方法。总结状态和行动空间导致良好的表现，但需要预先设计的努力，知识和领域的专业知识。为了消除定义这样的汇总空间的需要，我们表明深度rl也可以有效地训练原始状态和行动空间。基于部分可观察马尔可夫决策过程的对话系统已知需要许多对话来训练，这使得它们对于实际部署而言不具有吸引力。我们展示了一个基于actor-critic架构的深度rl方法可以非常有效地利用少量的数据。实际上，用手工制作的政策只收集了几百个对话，演员 - 评论家深度学习者从监督和批量结合的角度出发是相当诱人的。此外，与其他使用批量rl的数据初始化的深层方法相比，最优策略的收敛速度显着加快。
+In this paper, we propose to use deep policy networks which are trained with an advantage actor-critic method for statistically optimised dialogue systems. First, we show that, on summary state and action spaces, deep Reinforcement Learning (RL) outperforms Gaussian Processes methods. Summary state and action spaces lead to good performance but require pre-engineering effort, RL knowledge, and domain expertise. In order to remove the need to define such summary spaces, we show that deep RL can also be trained efficiently on the original state and action spaces. Dialogue systems based on partially observable Markov decision processes are known to require many dialogues to train, which makes them unappealing for practical deployment. We show that a deep RL method based on an actor-critic architecture can exploit a small amount of data very efficiently. Indeed, with only a few hundred dialogues collected with a handcrafted policy, the actor-critic deep learner is considerably bootstrapped from a combination of supervised and batch RL. In addition, convergence to an optimal policy is significantly sped up compared to other deep RL methods initialized on the data with batch RL. 
+
+
+16、Task-oriented dialogue for CERO: a user-centered approach
+面向任务的Cero对话：以用户为中心的方法
+
+我们描述了一个以用户为中心的方法来设计指挥机器人的口语对话。使用场景和合成对话，然后与真实用户进行模拟试验，我们建立了一个指挥办公室机器人的口语界面。实施系统的初步评估带来了与没有屏幕的机器人交互所需的反馈的有趣问题。我们正在使用能够显示对话式手势的机器人上的一个小生命般的人物。我们对录像资料进行了初步评估，提出了对话中低层次反馈，时间安排和命令排序问题
+We describe a user-centered approach to the process of designing spoken dialogues for commanding robots. Using scenarios and synthetic dialogues followed by simulated trials with real users we built a spoken language interface for commanding an office robot. Initial evaluation with the implemented system has brought interesting questions concerning the feedback necessary for interacting with a robot that has no screen. We are using a small life-like character placed upon the robot who is able of displaying conversational gestures. We have performed initial evaluations on video recorded material which have raised issues concerning low-level feedback, timing and sequencing of commands in dialogue
+
+
+17、Neural Belief Tracker: Data-Driven Dialogue State Tracking
+神经信念跟踪器：数据驱动的对话状态跟踪
+
+摘要：现代语音对话系统的核心部分之一是信仰追踪器，它在对话的每一步估计用户的目标。然而，目前大多数方法难以扩展到更大，更复杂的对话领域。这是由于他们依赖于：a）需要大量注释培训数据的口语理解模型;或b）手工制作的词汇，用于捕捉用户语言中的某些语言变体。我们提出了一种新颖的神经信念跟踪（NBB）框架，通过建立在代表性学习的最新进展，克服了这些问题。nbt模拟预先训练的单词向量的理由，学习将它们组合成用户话语和对话上下文的分布式表示。我们对两个数据集的评估表明，这种方法超越了过去的限制，匹配了依赖于手工语义词典的最先进模型的性能，并且在没有提供这样的词典时性能超越了它们。
+Abstract: One of the core components of modern spoken dialogue systems is the belief tracker, which estimates the user's goal at every step of the dialogue. However, most current approaches have difficulty scaling to larger, more complex dialogue domains. This is due to their dependency on either: a) Spoken Language Understanding models that require large amounts of annotated training data; or b) hand-crafted lexicons for capturing some of the linguistic variation in users' language. We propose a novel Neural Belief Tracking (NBT) framework which overcomes these problems by building on recent advances in representation learning. NBT models reason over pre-trained word vectors, learning to compose them into distributed representations of user utterances and dialogue context. Our evaluation on two datasets shows that this approach surpasses past limitations, matching the performance of state-of-the-art models which rely on hand-crafted semantic lexicons and outperforming them when such lexicons are not provided.
+
+
+
+18、Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation
+多分辨率递归神经网络：对话响应生成的应用
+
+摘要：介绍了多分辨率递归神经网络，将序列框架扩展为自然语言生成模型，将其作为两个并行离散随机过程：一系列高级粗糙的令牌和一系列自然语言的令牌。有很多方法可以估计或者学习高级粗糙的令牌，但是我们认为一个简单的提取过程足以捕捉到大量的高级语义语义。这样的程序允许通过最大化两个序列上的精确联合对数似然来训练多分辨率递归神经网络。与标准的对数似然目标w.r.t相反自然语言令牌（词困惑），优化联合对数似然使得模型偏向于建模高级抽象。我们将所提议的模型应用于两个具有挑战性的领域中的对话响应生成任务：ubuntu技术支持域和Twitter对话。在ubuntu上，该模型的性能优于竞争方法，实现了根据自动评估指标和人类评估研究得出的最新结果。在twitter上，该模型似乎根据自动评估指标生成更多的相关和主题响应。最后，我们的实验表明，所提出的模型更善于克服自然语言的稀疏性，更好地捕捉到长期结构。
+Abstract: We introduce the multiresolution recurrent neural network, which extends the sequence-to-sequence framework to model natural language generation as two parallel discrete stochastic processes: a sequence of high-level coarse tokens, and a sequence of natural language tokens. There are many ways to estimate or learn the high-level coarse tokens, but we argue that a simple extraction procedure is sufficient to capture a wealth of high-level discourse semantics. Such procedure allows training the multiresolution recurrent neural network by maximizing the exact joint log-likelihood over both sequences. In contrast to the standard log- likelihood objective w.r.t. natural language tokens (word perplexity), optimizing the joint log-likelihood biases the model towards modeling high-level abstractions. We apply the proposed model to the task of dialogue response generation in two challenging domains: the Ubuntu technical support domain, and Twitter conversations. On Ubuntu, the model outperforms competing approaches by a substantial margin, achieving state-of-the-art results according to both automatic evaluation metrics and a human evaluation study. On Twitter, the model appears to generate more relevant and on-topic responses according to automatic evaluation metrics. Finally, our experiments demonstrate that the proposed model is more adept at overcoming the sparsity of natural language and is better able to capture long-term structure.
+
+
+
+
+19、SimpleDS : A Simple Deep Reinforcement Learning Dialogue System
+简单：一个简单的强化学习对话系统
+
+本文提出了“简单”，一个简单的，公开的对话系统训练与深入强化学习。与以前的强化学习对话系统相比，该系统通过直接从最后系统的原始文本和（噪声）用户响应执行动作选择来避免手动特征工程。我们在餐厅领域的初步结果表明，确实有可能通过一种旨在智能互动代理人的对话控制的高度自动化的方法来诱导合理的对话行为。
+This paper presents 'SimpleDS', a simple and publicly available dialogue system trained with deep reinforcement learning. In contrast to previous reinforcement learning dialogue systems, this system avoids manual feature engineering by performing action selection directly from raw text of the last system and (noisy) user responses. Our initial results, in the restaurant domain, show that it is indeed possible to induce reasonable dialogue behaviour with an approach that aims for high levels of automation in dialogue control for intelligent interactive agents.
+
+
+20、Sequence-to-Sequence Generation for Spoken Dialogue via Deep Syntax Trees and Strings
+通过深层语法树和字符串进行语音对话的序列到序列的生成
+
+我们提出了一种基于序列到序列的自然语言生成器，它可以被训练生成自然语言的字符串以及来自输入对话行为的深层语法依赖树，我们用它来直接比较两步生成和单独的句子规划和表面实现阶段到一个联合，一步到位的方法。我们能够使用非常少的训练数据成功地训练两个设置。联合设置提供了更好的性能，超越了基于n-gram的分数的最新技术，同时提供更多相关的输出。
+We present a natural language generator based on the sequence-to-sequence approach that can be trained to produce natural language strings as well as deep syntax dependency trees from input dialogue acts, and we use it to directly compare two-step generation with separate sentence planning and surface realization stages to a joint, one-step approach. We were able to train both setups successfully using very little training data. The joint setup offers better performance, surpassing state-of-the-art with regards to n-gram-based scores while providing more relevant outputs.
+
+
+21、End-to-end optimization of goal-driven and visually grounded dialogue systems
+端到端的目标驱动和视觉对话系统的优化
+
+摘要：对话系统的端到端设计最近成为了一个热门的研究课题，这要归功于编码器 - 解码器架构等功能强大的工具，用于序列到序列的学习。然而，目前大多数方法将人机对话管理作为一个监督学习问题，目的在于预测参与者的下一个话语，给出完整的对话历史。这个愿景过于简单化，使得对话所固有的内在规划问题以及其基础性质，使对话的背景大于单一的历史。这就是为什么只使用端到端体系结构来解决闲聊和问题解答任务的原因。在本文中，我们引入了一个深度强化学习方法来优化基于策略梯度算法的视觉基础任务导向对话。这种方法在通过机械turk收集的120k对话数据集上进行测试，并且在解决产生自然对话的问题和在复杂图片中发现特定对象的任务中提供令人鼓舞的结果。
+Abstract: End-to-end design of dialogue systems has recently become a popular research topic thanks to powerful tools such as encoder-decoder architectures for sequence-to-sequence learning. Yet, most current approaches cast human-machine dialogue management as a supervised learning problem, aiming at predicting the next utterance of a participant given the full history of the dialogue. This vision is too simplistic to render the intrinsic planning problem inherent to dialogue as well as its grounded nature, making the context of a dialogue larger than the sole history. This is why only chit-chat and question answering tasks have been addressed so far using end-to-end architectures. In this paper, we introduce a Deep Reinforcement Learning method to optimize visually grounded task-oriented dialogues, based on the policy gradient algorithm. This approach is tested on a dataset of 120k dialogues collected through Mechanical Turk and provides encouraging results at solving both the problem of generating natural dialogues and the task of discovering a specific object in a complex picture.
+
+
+22、Adversarial Evaluation of Dialogue Models
+
+
+最近编码器 - 解码器模型的应用已经在完全由数据驱动的对话系统中取得了实质性的进展，但是评估仍然是一个挑战。对抗性的损失可能是一种直接评估对话响应听起来像是来自人类的程度的方式。这可以减少对人类评估的需求，同时更直接地评估生成任务。在这项工作中，我们通过训练一个区分对话模型的样本和人类生成的样本来调查这个想法。虽然我们发现这种设置是可行的，但我们也注意到许多问题仍然在实际应用中。我们讨论这两个方面，并得出结论认为今后的工作是有必要的。
+The recent application of RNN encoder-decoder models has resulted in substantial progress in fully data-driven dialogue systems, but evaluation remains a challenge. An adversarial loss could be a way to directly evaluate the extent to which generated dialogue responses sound like they came from a human. This could reduce the need for human evaluation, while more directly evaluating on a generative task. In this work, we investigate this idea by training an RNN to discriminate a dialogue model's samples from human-generated samples. Although we find some evidence this setup could be viable, we also note that many issues remain in its practical application. We discuss both aspects and conclude that future work is warranted.
+
+
+23、Coherent Dialogue with Attention-based Language Models
+与基于注意力的语言模型进行连贯的对话
+
+我们通过配备动态关注机制的基于rnn的对话模型为连贯的对话延续建模。我们的注意力语言模型动态增加了对话继续的历史注意力范围，而不是在序列到序列模型中具有固定输入范围的标准注意（或对齐）模型。这允许每个生成的单词与其对应的对话历史中最相关的单词相关联。我们在两个流行的对话数据集（开放域电影三元组数据集和封闭域ubuntu数据集故障排除）上评估模型，并在几个度量标准上对最先进的基线进行了显着的改进，包括互补的基于多样性的度量标准，人类评估和定性可视化。我们还表明，具有动态注意力的香草动物通过允许灵活的长距离记忆而优于更复杂的记忆模型（例如，lstm和gru）。我们通过基于主题建模的重新排名来进一步提高连贯性。
+We model coherent conversation continuation via RNN-based dialogue models equipped with a dynamic attention mechanism. Our attention-RNN language model dynamically increases the scope of attention on the history as the conversation continues, as opposed to standard attention (or alignment) models with a fixed input scope in a sequence-to-sequence model. This allows each generated word to be associated with the most relevant words in its corresponding conversation history. We evaluate the model on two popular dialogue datasets, the open-domain MovieTriples dataset and the closed-domain Ubuntu Troubleshoot dataset, and achieve significant improvements over the state-of-the-art and baselines on several metrics, including complementary diversity-based metrics, human evaluation, and qualitative visualizations. We also show that a vanilla RNN with dynamic attention outperforms more complex memory models (e.g., LSTM and GRU) by allowing for flexible, long-distance memory. We promote further coherence via topic modeling-based reranking.
