@@ -1,0 +1,96 @@
+DeeCamp在线笔试题
+答案：1、A；2、D；3、A；4、D；5、B；6、B；7、D；8、C；9、A；10、A；11、F
+1、	有关机器学习分类算法的Precision和Recall，以下定义中正确的是假定（tp=true positive，tn=true negative，fp=false positive，fn=false negative）
+A.	Precision=tp/(tp+fp)，即（其中确实为positive/预测出的总positive数），Recall=tp/(tp+fn)，即（其中确实为positive/实际总的positive数）
+
+2、	下面有关计算机基本原理的说法中，正确的一项：
+A．堆栈（stack）	在内存中总是由高地址向低地址方向增长。
+B．发生函数调用时，函数的参数总是通过压入堆栈（stack）的方式传递的。
+C．在64位计算机上，python3代码中的int类型可以表示的最大数值是2^64-1.（错 是2^32-1）
+D．在任何计算机上，python3代码中的float类型都没有办法直接表示【0,1】区间内的所有实数。【float类型智能表示[0，1]区间部分实数，并不能完全表达】
+
+3、	有关矩阵运算，以下说法中正确的是：
+A．	矩阵运算可以并行或分布式系统上以并发方式执行。
+B．	矩阵乘法运算在任何时候都不满足交换律。（错A*B*C=B*C*A）
+C．m*n的矩阵在内存或文件中存储时，需要的字节数总是与m*n成正比。
+D．空矩阵是指所有元素都为0的矩阵。（错 是【】）
+
+4、	有关Tensorflow API，以下说法正确的是
+A．	tf.Variable和一般编程语言中‘变量（Variable）的含义完全相同。
+B．	tf.placeholder定义的对象，对应于深度神经网络中的‘超参数’
+C．	通过tf.constant定义的对象，因为是常量，所以，在session.run()运行前就可以用eval（）方法获得对象的值。
+D．	Session.run()运行一个训练过程时，Tensorflow会使用符号执行（Symbolic Execution）对计算机进行优化。
+
+5、	以下哪一个正则表达式不能与字符串‘https://www.tensorflow.org/’，不含引号，匹配
+A．[a-z]+://[a-z.]+/
+B．https[://]www[.]tensorflow[.]org[/]
+C．[https]+://www.tensorflow.org/
+D．[a-zA-z.:]+
+
+6、假设可以不考虑计算机运行资源（如内存）的限制，以下 python3 代码的预期运行结果是：【此题仅一个正确选项】
+import math
+def sieve(size):
+sieve = [True] * size
+sieve[0] = False
+sieve[1] = False
+for i in range(2, int(math.sqrt(size)) + 1):
+k = i * 2
+while k < size:
+sieve[k] = False
+k += i
+return sum(1 for x in sieve if x)
+print(sieve(10000000000))     即2^10
+
+B、455,052,511
+
+7、一个长度为n的正整数数列，先递减再递增，如果要找到数列中最小的正整数，最优算法的平均时间复杂度
+D．O(log(n)) 即二叉搜索树的思想
+
+8、一维离散卷积的定义   。。。这道题纯矩阵计算  选C、【4、13、28、27、18】
+
+1.	9、cos(x)每个封闭区域可以容纳的最大矩形的面积是多少，选D、1.122  看图也能估计出来 
+
+10、二维码中存储的信息是A、Artificial Intelligence  即使用二维码生成工具 分别生成这些图片对比
+或者用ps恢复比较关键的部分  即可识别出来
+ 
+
+11、有一张图灵奖得主的肖像照片，被一个学生用简单的异或加密方法，编码成了如下这样的字符串：
+ 
+vOy67L3rveu667rsveu97b3rveq67L3qvey67L3rvey77brruuy667rquuy667zrvey97b3quuy66rzsu+u967rsu+u87L3tu+y96r3svey77Lzruuy66rrtuuu97Lvtuuu77b3svey67b3sveq67L3qveu67Lrsuuy6673rvOy77brsveu96r3suuu967rtveq67L3sveu9673quuy967rsveu767rsu+y967rsu+q967rsu+q86r3suu267b3ruu267Lvruuy67Lvtveu6673ruuu967rruuu97brru+y/6b/ovui67rrqve277L3suuu86r3tuuu6673svey967rsuuy66rzsuuy97Lrsveu67brruu286Lzpvui+6L7ovui+6L7ovui+6b3rveu87Lvrveu87Lvtu+u967vrvOy67Lvruuu9673svey967rtu+267Lrovui+6L7hp/OSvsmZ0JzDguqpoOi+6L7suuy6673su+y97b3uuuy867rsvey667vsuuu6673suuu967vsuOi+6Pm354MucwIlbAxPD2Q/aAJGAAiR5sa+6L3uvey967vtu+u67Lrruuy97Lrsu+u97b3suuy66bzsu+y96L7oillAFUUEVzR9KntUEU0kR3RUH0gjRnUuKc6+6bvsuuy6673suu267Lrsuuy67Lrtuuu97b3tuuq97bvsvei7i0cXVzpzKQtYF0YZWQRIM3sdTDRsL2QzdQBNjOi+7L3su+y87bvrveu87Lrsuu277Lrruuy67L3qu+y66L/AJx5MP2glBUcfdSNFEHEYQTJvMnkwYD1tOmzHayPVvui967rsuuy7673suuy97b3uu+u67Lvru+y67L3rvOypdkIEcSJ7VxZwK3UhdRx0M2c4lTxsNWnFbzaTxZLGaIHovu277bvsve267Lrrve277bvsuu2967rsveq67L76/SRLN2grF04RdSt/K2Q0Yz9pL382ajWVy5rCYMCZ0YzPyb7su+277L3suu2967ztuOy667rtuuu97Lrsve2//8UhYD4EdxxADkQfdyxjwYbUkDtuwJrNazyTyWo6hdmP27ev6Lrsuuu67Lrsuu297bruu+y97Lrru+u7673rvvDbVmVQHE4OWQ5DHH0yYcafxJc8lsmc0IXWj9WRN2vWte2P6+S+67jtuuu67Lrtvey77bvsveu77L3sveu67b3olSkGWnwueSgJQCthO27Nhj6VPmnBbcSA2rTbmOKIz4rwu9Oqvui67Lrsuuu967rsu+277Lrsuuy67Lrsuu296MU/CS9vO3EmAkAuazie1oQ2YTdtwo7lmsuK56b6vd2K4bnmj6Louuy47rrrvey667vuuO267L3tuuy77bvtvtpjKHIndDlzIAd3N2nMtdCXN2zFju+9157cu/Wg8qH6r9y0946C6LzuuOy77Lrsveu77rvsuuy767rruu696b6aX1RyI3IjfkUleTSc4YvKYjNlxLDSm+mi877yrvit8KT7uPmw7/6+7rvsvey97brsu+677Lvrvey67rzsu+i+c3NXciZvIQ5/Ikg1iOOexX7BZC6f1NyKpOOw/KTurIuo/KH2veDYuuq77brsveq97bvvu+y67L3tuOy87LvonTp6L3cnbiIQdRZIyoHXjMNkPZbAkPTU4Ircoei28aKD0eyk9L7eoK3ouu667brsvey47rrrvO267brvtui+6OkEcC9/VXpQIHUWec+Z2r/AZyeG27jqj+aI2rXvpIDTgNbtooC53rSi6Lvsveu67brsuO+77Lrsuuu977fovuk2B24rc10KTxxCBpbZmdqNNnZ9f9e14aPfmOmpgMSNqfyo/K/9puCNmOi67bzru+y67Ljuu+y97LrsveunoejTGCQEVnInfi0ORhuc3I3ruN+L1biQ1ITa7qb+qI/Q/6L51/rV97/ejJPouuy77bvsveu577vtvey67b7vrYgvZw5RAHTEgoryrOaz4r3ovui+6L7ovui/5LPhp9mRqP7ShK361PW/2ISS6LvtuOy67L3su+647brsveu97L7YwW4WZY7LpP6/6KvmtPis+ajNkcX2rpfBmcik5L7grPOF0oavgKP1p9Voh+i67rrtu+y87bjuuuu67Lruvui+4/uD7sjcZOjIsrMnh/ei2rXQdjBrNIqHx5nJnfCJkdHPpsf/1oGp+bDZYInove297brsvey57rvrvO277LPzms6cqLHyA3HJq7PN9aKO2dRsx5zNiZH2m8qgyZ7z+NnTkZ/1hquA0Pm4356e6Lnsuu2667rtue+47bvuv+6b3pr+nua2+qnx8pmS76vwkNbkfMGM3MGr9aD2ncmh9qPgsbr7wJfQhNf7qd2Asei47bruuuy77bvuuu277b3rqvOx46bnt/S15aTXg+eY86rnoJI2oJbzn/eU3pHAo/Wc/6eI+MaUxo2qgdbPubzru+267brtu+y47bvtuuu96bTnt+Ol4tu2qcfmZvDFKm6A5ajYj/WnyaHP+d+UwKPxo+X+T/3CjNmN1P+i0cq+77nvu+277LrsuO6467rtveu85rP8sM19taOOBBfdvW9mwGP2/qb1nven94bclc6k/KThqWDrwYPbj92Cvtzmvu277brsuuu67bjuu+u67bvsvuSw57ptbY6Buj1q1U8mdQpN7v+iyJ7ynqjtuYzNpPag77Sa38aC0JHDl6GV6Lrtu+297brru+y47rjtvey67Lzsn+6cBTHX6KWZwzBYLGHGi/jIpcii+4KE17+NyJ3Ctej5Y+3aitf4rP+mr+i57rntvey97brtuO247r3quu666KbM1D7fkAZr62/GmObdi9qd86T3k8H/iNetlM2X5a6u35v2ypDX+LjfkpbovuC47bjsuuy97bjuuuy77L3tuO2+75eT547koplmQVM2jfbRh9uZx/q73LTp35nCo+7srpWflP+c24Kq9bWT/qrouu+57Lvsuu2477vsu+y67Lvvu+i+08fxsfeZn2tdKGo/ejSB/NX/suGk/qCKwKv7ktzYrrH8pM6Qx4uo75Lf7b/uu+677L3tuO267Lrsu+277LvuvqVRb8RvJk0PQzKYy34/vv7f/IPw1vmoj8qo+4qfh+Ou+bfmltbzveSIwMi+77jtu+267Ljsuuy67Lztu+y77L6lQzV0PQFAB0MznsFj0qKHwva9gtf80or1nNTs2bfku+mrx/ql7rjssD6rvuy77Lrtuuy57brsu+297Lvtuuu+p11MKkkMVQ1HKGrBmuerit+A3/nT+6GKypbSmOS665y2xq+Eqfm85bHUnq3ou+247brtue647rrsuO677brsvtZovPuo7WwcWR9vw47v1Y7S+K71o/bdkM+Y8Ljoo4wrlvWv5bzuvuSI1GGG6Lrtu+y67bjtuu2467vtu+247L7YfGougoGIKF4RbMyJ992Pq/Wph6P23JDApeystCNr5bHTnuKv74nWt/OJ/Oi+6LvruO657L3tuO277LvtuOu+1gRk1aTZcwktEm7Qv/rajKH10orSgtOa5K6sLGfrtzaV0rLqgdK9/9CFsuPlqeO+6rvtue267b3suOy47bvuvvoWWsiYIFoAWRpq3KT8o/yu8quK3YzxpaMwZOO5zGI9mdicPon83IW75qPoiMKZpui/7rntuO277Lvtu+64677kKRp5Rg1fBCgDctul77X0oIDclPytqi9cxbTMkMWXPm4yj4r2g77es+q14IHUazrDvui47rrru+267Lvuu+i+vGwxFk4IVXQ4fULEt9C25qaL/7TGwUcxj9BlOo3IYiJl8/+o2YGg963ggua+6r/RZ/rouO297Lvsuuu47brsvqlSLC1+GiFzLQV8LmI8nOvHqvzcTjGaz5c0YMaNNHDby6rD94LBbsqaOGs7ZMWE4Ys2prvtu+277bjuu++47b7GTkU7ewgyficTYBdmzYr/yZSZJoHMbz1pPpzNYzS5o8vWcgImZToKWBNCFE8WSiqS15657rvtu+267bjuuO6+x2BHKEdmPwBfLHcnh9S8gqbUmdCfOm7DmtOSKoqcwfV7ajdkLAQsCWQndSR8LmM3bT6euOu77Lrtu+247bvsvsFtVCArcC8EcSVOxIfapvWP24zPkcuY1IHLjpDygZ8bOmE9aD11LBmTNksZdSV4OGw9a7jtuuy97bvtuu247b7nEFcgV35eGnsmYNu69L3itt2A0YLfiOW+4rzkQXNWcA1kPWcwZjgqkjR/FEMneidzK2+57rrsu+y97Lvtu+6+7cMMHUEEfTRxxbf3oumK147agdWA5K7aYCEkWzh+Rmc0aTpoMVw0JpE1fidEIZbEaTN5uO+767vtuuy47rrruuigLXJ0Lmkxe9Sm6I3VhtCD14HStP2afjRlIHwvGlRhO2k4dCZjLjRsNnIecxtwwobbjbvuuuu77brsuu667rvqvsLpsD9yI5TjjNmYzIbXgNaF4qg3N2omcSVnUgwxbSZsPHdVbF04Zy9zGUksSSdgPJi47brsuu247bvuu+u47rrovuD0n9mM2pjNh9KC1oDTjP5nWDppP3EycCtoMmw8aT9tV35MLXUhSh1CK2YlYz17uO677bvuu+y77rvtu+257r7oveKam9a11ITYjN2O2tc8Dmw2XDxlMGo2aiRyOnQgeCwXexx2KGctfzFuMGHIlbntu+y67rruuu247L3tuO+57r7o/27is92Z04DXhfuFWzlkDGMxZQxoUnQjei19KQgvGHAgYjtqPZTBk8OUzoe47brtuu267rvsuO297rjuu+266Jdr2ILXnceeybPiOmk6XTdjC1svKkhjPAMhelJ/LCh+LpXHlseYzIXVncyAue2967rtuu277bvsu+247rjtuOiufjufyI3NktaiGQhvCV8KUjYVkzklVi92OnkhbEU6az2b1Y7djd+N2YTZt7jsuuy97LjsuO247LvvuO647rvrvdU2a8qk+2I0nG0/XwhbBnNg2ZIAB14haTpzIABJPIzOhdOz77jrtNqJ5o257bvsu+277Lvuuu647rjuue677b7nMpPzx/J4y1dTN18PUCnQu8JQVgpwI3ZSejIJk8qK6IXMt+i47LbbsvCVue6767vsvey77rjtu+2577jvuOi4sW0zF9swUAUEWQpVAxOL9ZgBCmYifVUEK2EAK6bQnu6AyIjlvfGO1Y3Mb7juu+y67Lvtu+267bvtuO+57r7NlphLEE1JeQ5ICl4GWHfgpN5RWzh9J3shZjdcV9atz5Tvu9GK4L31jT9kE3u97LrsuO297Lvtuuu77rngtuiz1KNCajJmNVs0YAlSNy+w5bsgGmMoCixiNWUJaH/pot2b3KHpj+Kx+bHFW2V3uO277Lvtuu247bvsu++577jsgfvuNCU3XzRnNV4Lbmzot+hgTg50RxE4XTJnIwuT8LjYm9C997TptPGv+aXESA==
+ 
+已知肖像照片是64×64像素的0~255级灰度图片，内存中用raw bitmap方式，每个像素用一个字节存储。对肖像照片的原始数据，学生使用的加密代码片段如下（Python3代码，代码中的key值是未知的加密密钥）：
+ 
+_KEY_LEN = 2
+bitmap = PIL.Image.open(image_path).tobytes()
+encrypted = []
+for index, byte in enumerate(bitmap):
+encrypted.append(byte ^ key[index % _KEY_LEN])
+return base64.standard_b64encode(bytes(encrypted))
+ 
+请问：这张被加密的照片，是以下哪位图灵奖得主的肖像？请从下方A至H的选项中，选择正确答案的字母序号填入：
+(A) Marvin Minsky
+(B) John L. Hennessy
+(C) Donald E. Knuth
+(D) Raj Reddy
+(E) John McCarthy
+(F) Edsger W. Dijkstra
+(G) John Hopcroft
+(H) Alan Kay
+
+
+解：将字符串解码后转换为64*64numpy数据，然后显示看是哪个作者
+import base64
+import numpy as np 
+import cv2 as cv
+with open('D://str2.txt','r') as f:
+    a=f.read()
+    b=base64.standard_b64decode(a)
+    # x=np.zeros((2,3))
+    c=np.zeros(4096,np.uint8)
+    for i in range(4096):
+        c[i]=b[i]
+    c=c.reshape((64,64))
+    cv.imshow('o',c)
+cv.waitKey()
+
+
