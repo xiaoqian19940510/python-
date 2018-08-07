@@ -7,3 +7,5 @@
 5、input() python3中返回会str，python2中返回为int，python2要返回str需要使用raw_input()
 6、python2中是try:;Exception,e:  而python3中是try:;Exception as e:
 7、编码问题  PYTHONIOENCODING="UTF-8" python  查看编码方式print(sys.stdout.encoding)
+8、xrange改为range
+9、dict.keys()改为list(dict.keys())
