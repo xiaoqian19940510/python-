@@ -1,6 +1,6 @@
 
 1、print python2中可以加括号也可以不加，但在python3中必须加括号print()
-2、cPickle python2中为cPickle，在python3中改为pickle
+2、cPickle python2中为cPickle，在python3中改为pickle                model_params = pickle.load(open(model_path, 'rb')) 改为model_params = pickle.load(open(model_path, 'rb'),  encoding='iso-8859-1')
 3、file() python2中可以使用file()读写文件，而在python中需要使用open()
 4、reload(sys);sys.setdefaultencoding('utf-8')在python2中需要，python3中去掉  加入if sys.getdefaultencoding() != defaultencoding:；reload(sys)
 ；sys.setdefaultencoding(defaultencoding)
